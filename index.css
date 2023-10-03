@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Kumbh+Sans:wght@400;700&family=Merriweather+Sans&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&family=Overpass:wght@400;700&family=Poppins:wght@200;400;600&display=swap");
+
+body {
+  min-height: 100vh;
+  font-family: "Kumbh Sans", "Overpass", "Poppins", sans-serif;
+  background: #af67e9;
+  background: linear-gradient(180deg, #af67e9, #6666e7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: white;
+  width: 922px;
+  height: 514px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.second-image-container {
+}
+
+.first-image-container {
+}
+
+.question_heading {
+  color: hsl(237, 12%, 33%);
+}
+
+.para {
+  color: hsl(240, 6%, 50%);
+}
+.image-container {
+  width: 966;
+  height: 945;
+  background-image: url("./images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+}
+
+.image-container::after {
+  background-image: url("./images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  transform: rotate(-30deg);
+}
+
+.FAQ {
+  display: block;
+  /* width: 30px;
+  height: 20px; */
+  margin: 0px 0px 0px 70px;
+  vertical-align: top;
+  height: auto !important;
+}
+
+.list {
+  display: none;
+  height: auto;
+  margin: 0;
+  float: left;
+}
+.show {
+  display: none;
+}
+.hide:target + .show {
+  display: inline;
+}
+.hide:target {
+  display: none;
+}
+.hide:target ~ .list {
+  display: inline;
+}
+.hide,
+.show {
+  /* width: 20px;
+  height: 20px; */
+  font-size: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 0;
+  float: left;
+  margin-bottom: 25px;
+}
+
+.hide:hover,
+.show:hover {
+  margin-bottom: 25px;
+}
+
+.list p {
+  height: auto;
+  margin: 0;
+  text-wrap: nowrap;
+}
+.question {
+  float: left;
+  /* width: 30px;
+  height: 20px; */
+  height: auto;
+  width: 90%;
+  line-height: 20px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  font-style: italic;
+}
